@@ -5,7 +5,7 @@ package employee;
 public class Employee {
 	private int id;
 	private String name;
-	private int salary;
+	private int purchaseAmount;
 	private int age;
 	public int getId() {
 		return id;
@@ -23,12 +23,12 @@ public class Employee {
 		this.name = name;
 	}
 
-	public int getSalary() {
-		return salary;
+	public int getpurchaseAmount() {
+		return purchaseAmount;
 	}
 
-	public void setSalary(int salary) {
-		this.salary = salary;
+	public void setpurchaseAmount(int purchaseAmount) {
+		this.purchaseAmount = purchaseAmount;
 	}
 
 	public int getAge() {
@@ -41,11 +41,11 @@ public class Employee {
 
 	
  //constructor
-	public Employee(int id, String name, int salary, int age) {
+	public Employee(int id, String name, int purchaseAmount, int age) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.salary = salary;
+		this.purchaseAmount = purchaseAmount;
 		this.age = age;
 	}
 	
