@@ -22,11 +22,14 @@ public class Menu {
         int key=s.nextInt();
          //switch case
         switch (key){
-            case 1: //Press 1 will display all the record in ascending order
+            case 1: //Press 1 will display all the record
+                employeeList1.display();
+                break;
+            case 2: //Press 2 will display all the record in descending order
                 employeeList1.sort();
                 employeeList1.display();
                 break;
-            case 2: //Press 2 will update the employee if Id is present in record else it will pass the message inavlid id
+            case 3: //Press 3 will update the employee if Id is present in record else it will pass the message inavlid id
                 System.out.println("Enter employee id");
                 int id = s.nextInt();
                 System.out.println("Enter employee updated purchaseAmount");
@@ -39,7 +42,7 @@ public class Menu {
                     
                 }
                 break;
-            case 3:
+            case 4:
                 break;
         }
     }
