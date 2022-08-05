@@ -1,4 +1,4 @@
-package employee;
+ppackage employee;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -15,7 +15,7 @@ public class EmployeeList {
     public void display(){
         int i=1;
         for(Employee employee:this.employeeList){
-            System.out.println("Employee"+i+" ::: id: "+employee.getId()+" name: "+employee.getName()+" salary: "+employee.getSalary()+" age: "+employee.getAge());
+            System.out.println("Employee"+i+" ::: id: "+employee.getId()+" name: "+employee.getName()+" purchaseAmount: "+employee.getpurchaseAmount()+" age: "+employee.getAge());
             i++;
         }
     }
@@ -29,12 +29,12 @@ public class EmployeeList {
         });
     }
    // to update the field using Id
-    public boolean update(int id, int salary) {
+    public boolean update(int id, int purchaseAmount) {
         boolean flag=false;
         for(Employee employee:this.employeeList){
             if(employee.getId()==id){
                 flag=true;
-                employee.setSalary(salary);
+                employee.setpurchaseAmount(purchaseAmount);
             }
         }
         return flag;
